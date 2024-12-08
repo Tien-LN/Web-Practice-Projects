@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeGymer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo">Code<span>Gymer</span></a>
+            <img id="mobile-cta" class="mobile-menu" src="/1.CodeGymer/images/menu.png" alt="open navigation">
+
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="/1.CodeGymer/images/close.png">
+                <ul class="primary-nav">
+                    <li class="current"><a href="#">Home</a></li>
+                    <li><a href="#">Languages</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Pricing</a></li>
+                </ul>
+                <ul class="second-nav">
+                    <li><a href="#">Contact</a></li>
+                    <li class="login-button"><a href="#">Login</a></li>   
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <p class="subhead">Learning &amp; Practicing</p>
+                <h1>
+                    A website that train you to become a code<span>Gymer</span> 
+                    <img src="/1.CodeGymer/images/flexed-biceps.png">
+                </h1>
+                <div class="hero-cta">
+                    <a href="#" class="primary-cta">Try for free</a>
+                    <a href="#" class="watch-video-cta">
+                        <img src="https://assets.codepen.io/2621168/watch.svg">
+                        Watch a video
+                    </a>
+                </div>
+            </div>
+            <img class="right-col" src="/1.CodeGymer/images/pic1.png">
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <img class="code-icon" src="/1.CodeGymer/images/code_icon.png">
+            <ul class="features">
+                <li>Interactive Code Editor</li>
+                <li>Step-by-Step Tutorials</li>
+                <li>Hands-On Projects</li>
+                <li>Gamified Challenges</li>
+                <li>Multi-Language Support</li>
+                <li>Community & Support</li>
+                <li>Progress Tracker</li>
+                <li>Resource Library</li>
+            </ul>
+            <img class="feature-pic" src="/1.CodeGymer/images/pic2.jpg">
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="/1.CodeGymer/images/person1.png">
+                    <blockquote>"I started with zero coding knowledge, and this platform made everything so easy to understand. The step-by-step tutorials and hands-on projects helped me gain confidence quickly!"</blockquote>
+                    <cite>— Laughing Car, Fullstack developer at NASA</cite>
+                </li>
+                <li>
+                    <img src="/1.CodeGymer/images/person2.jpg">
+                    <blockquote>"I’ve tried many coding platforms, but this one stands out. The interactive editor and real-world projects made learning fun and practical. Highly recommended!"</blockquote>
+                    <cite>— Gdagdi gada oh, Roblox's creator</cite>
+                </li>
+                <li>
+                    <img src="/1.CodeGymer/images/person3.jpg">
+                    <blockquote>"This platform not only taught me coding but also prepared me for real-world challenges. The challenges and progress tracker kept me motivated. Thanks to this, I landed my first developer job!"</blockquote>
+                    <cite>— Antony, Compa coder</cite>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="left-contact">
+                <h2>Contact</h2>
+                <form action="">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" cols="30" rows="10"></textarea>
+                    <input type="submit" class="send-message" value="Send message">
+                </form>
+            </div>
+            <div class="contact-right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57614.48762026432!2d14.568383797146392!3d63.17532913943918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x466fb846d4f93091%3A0x4adec23d33cfdcde!2zw5ZzdGVyc3VuZCwgVGjhu6V5IMSQaeG7g24!5e0!3m2!1svi!2s!4v1733589906995!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const mobileNavBtn = document.getElementById('mobile-cta');
+        const nav = document.querySelector('nav');
+        const mobileCloseBtn = document.getElementById('mobile-exit');
+            
+        mobileNavBtn.addEventListener('click', () => {
+            nav.classList.add('show-menu');
+        });
+            
+        mobileCloseBtn.addEventListener('click', () => {
+            nav.classList.remove('show-menu');
+        });
+    </script>
+</body>
+</html>
