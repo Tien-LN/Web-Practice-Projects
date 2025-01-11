@@ -25,6 +25,8 @@ for (let i = 0; i < 100; i++)
     board.appendChild(square);
 
     square.addEventListener("click", () => {
+        if(square.innerHTML == "") { return; }
+        
         let selectedSquares = document.getElementsByClassName("selected");
         if (selectedSquares.length == 0)
         {
